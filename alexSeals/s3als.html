@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seals</title>
+    <link rel="stylesheet" type="text/css" href="s3als.css">
+    <link rel="shortcut icon" type="image/x-icon" href="src/webIcon2.webp">
+    <link rel="stylesheet" href="../alexSeals/leaflet/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="../alexSeals/leaflet/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+</head>
+<body>
+
+<div id="topPage">
+    <header>
+        <div id="mainTitle">
+            <h1> MARINE </h1>
+            <p><b>ANIMALS</b></p>
+        </div>
+        <h1 id="SEALS">SEALS</h1>
+    </header>
+    <nav>
+        <div class="navBar">
+            <a href="../marineQuiz/quizMarine.html" id="sub1">quiz</a>
+            <div class="dropdown">
+                <button class="dropdownButton">
+                    animals &darr;
+                </button>
+                <div class="dropdownContent">
+                    <a href="../julioPenguins/juliopenguins.html" id="sub2">penguins</a>
+                    <a href="../sidJellyfish/sidJellyfish.html" id="sub3">jellyfish</a>
+                    <a href="../vinOrcas/Orcas.html" id="sub4">orcas</a>
+                    <a href="../alexSeals/s3als.html" id="sub5">seals</a>
+                </div>
+            </div>
+            <a href="../homeMarine/homeMarine.html" id="sub6">home</a>
+        </div>
+    </nav>
+</div>
+    <main>
+        <h2>SEALS</h2>
+        <p>Seals are four limbed, fin footed, carnivorous, marine mammals. While they live both on land and in the water
+        and they do require air to breathe, they are generally better adapted for water which is where they spend most
+            of their time. Seals can both see and hear better in water. Though many look quite slick, all seals
+        have fur coats except for walruses.</p>
+        <h2>Seal Families</h2>
+        <p>Seals have 3 main families: earless seals (also known as true seals), eared seals, and walrus.
+        Both earless seals and eared seals have several varieties of seals included in their family, but while the
+        family including the walrus once included many variations, it now is solely composed of the walrus.</p>
+
+        <ul>
+            <li id="e-Title">
+                <h3 onclick="earless()">Earless Seals</h3>
+            </li>
+            <li id="e+Title">
+                <h3 onclick="eared()">Eared Seals</h3>
+            </li>
+            <li id="wTitle">
+                <h3 onclick="walrus()">Walrus</h3>
+            </li>
+        </ul>
+        <div class="families" id="earless">
+            <p>Earless seals have two main subfamilies, northern seals and southern seals. All members of this family
+                share the name seal, unlike sea lions or walruses.</p>
+            <img src="./src/baikal-seals.jpg" alt="baikal seals" id="baikal-seal-img">
+            <p>Baikal seals - A northern seal which holds the record for smallest seal at 1 meter long. They are also
+             the only freshwater seal.</p>
+
+            <img src="./src/baby-harp-seal.jpg" alt="baby harp seal" id="harp-seal-img">
+            <p>Harp seals - A northern seal well known for their cute, furry pups that appear in many photos.</p>
+
+            <img src="./src/leopard-seal.jpg" alt="leopard seal" id="leopard-seal-img">
+            <p>Leopard seals - A southern seal considered to be the deadliest seal. Fortunately, attacks on humans
+                 are rare and there have even been a few friendly interactions between leopard seals and particularly
+                lucky humans.</p>
+
+            <img src="./src/elephant-seal.jpg" alt="elephant-seal" id="elephant-seal-img">
+            <p>Elephant seals - There are two species of elephant seal, the northern and southern, which are both actually
+                members of the southern seal subfamily. The southern elephant seal is the largest seal species, and can
+                be up to 5.8 meters long.</p>
+            <button onclick="closeFam()">-</button>
+        </div>
+
+        <div class="families" id="eared">
+            <p>Though sea lions and fur seals are seperated in name and some characteristics the two subgroups are both
+                diverse enough within the group and similar enough between the two that a sea lion species may be closer
+                related to a fur seal species than another sea lion species. For a long time these were the official
+                subfamilies of eared seals, but currently there are no official subfamilies of eared seal, only genera.
+                Of the two groups, sea lions are generally larger, and go on shorter foraging trips. The most notable
+                difference though, is that fur seals have a thick underfur layer which sea lions lack.
+            </p>
+            <p>California Sea Lions - California sea lions occupy most of the West coast of North
+            America, including California. These sea lions have become fairly famous as they are highly intelligent
+            and as a result can be trained, resulting in them being a common feature in marine wildlife shows.</p>
+            <img src="./src/california-sea-lion.jpg" alt="california sea lion" id="cal-sea-lion-img">
+            <p>Stellar Sea Lions - The largest eared seal and the sole member of its genus.</p>
+            <img src="" alt="stellar-sea-lion-img">
+            <p>Northern Fur Seals - The northern fur seal is the sole living member of its genus and the largest
+            of the fur seals. They are also the only fur seal which is not of the southern fur seal genus.</p>
+            <img src="" alt="northern-fur-seal-img">
+            <p>Hybrid seals - The classifications of eared seals can become particularly complex due to their genetic
+            similarities. Sometimes hybrid seals are created, including cases of fertile hybrids. As species are defined
+            by multiple means, this creates a minor contradiction to the very definition of species as a concept as
+            for sexually reproducing animals the most common classification is of animals which can produce fertile
+            offspring as one species, but these animals are geographically, and morphologically distinct enough that
+                they would generally not be considered the same species.</p>
+            <p>The southern sea lion and south american fur seal pictured bellow are two distinct species which produced
+            a fertile hybrid
+                <a href="https://noticiasambientales.com/animales/uruguay-descubren-una-rara-cruza-de-lobo-y-leon-marino/">
+                    discovered in Uruguay</a>.</p>
+            <div id="hybrid">
+                <img src="./src/southern-sea-lions.jpg" alt="southern sea lions" id="southern-sea-lion-img">
+                <img src="./src/south-american-fur-seal.jpg" alt="south american fur seal" id="SA-fur-seal-img">
+            </div>
+
+            <button onclick="closeFam()">-</button>
+        </div>
+
+        <div class="families" id="walrus">
+            <img src="./src/walrus.jpg" alt="walrus" id="walrus-img">
+            <p>Walrus - </p>
+            <button onclick="closeFam()">-</button>
+        </div>
+        <div id="map"></div>
+        <button onclick="centerMap()">Center Map</button>
+    </main>
+    <footer>
+        <a>copyright &#169;</a> 2022
+    </footer>
+    <script src="s3als.js"></script>
+</body>
+</html>
