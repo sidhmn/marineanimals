@@ -11,8 +11,8 @@ var version = "1.9.4";
  * Various utility functions, used by Leaflet internally.
  */
 
-// @function extend(dest: Object, src?: Object): Object
-// Merges the properties of the `src` object (or multiple objects) into `dest` object and returns the latter. Has an `L.extend` shortcut.
+// @function extend(dest: Object, index-src?: Object): Object
+// Merges the properties of the `index-src` object (or multiple objects) into `dest` object and returns the latter. Has an `L.extend` shortcut.
 function extend(dest) {
 	var i, j, len, src;
 
@@ -201,7 +201,7 @@ function indexOf(array, el) {
 // @property emptyImageUrl: String
 // Data URI string containing a base64-encoded empty GIF image.
 // Used as a hack to free memory from unused images on WebKit-powered
-// mobile devices (by setting image `src` to this string).
+// mobile devices (by setting image `index-src` to this string).
 var emptyImageUrl = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 
 // inspired by https://paulirish.com/2011/requestanimationframe-for-smart-animating/
@@ -5061,7 +5061,7 @@ Map.include({
  * The layer names can contain HTML, which allows you to add additional styling to the items:
  *
  * ```js
- * {"<img src='my-layer-icon' /> <span class='my-layer-item'>My Layer</span>": myLayer}
+ * {"<img index-src='my-layer-icon' /> <span class='my-layer-item'>My Layer</span>": myLayer}
  * ```
  */
 
@@ -14416,4 +14416,4 @@ Map.TapHold = TapHold;
 Map.TouchZoom = TouchZoom;
 
 export { Bounds, Browser, CRS, Canvas, Circle, CircleMarker, Class, Control, DivIcon, DivOverlay, DomEvent, DomUtil, Draggable, Evented, FeatureGroup, GeoJSON, GridLayer, Handler, Icon, ImageOverlay, LatLng, LatLngBounds, Layer, LayerGroup, LineUtil, Map, Marker, Mixin, Path, Point, PolyUtil, Polygon, Polyline, Popup, PosAnimation, index as Projection, Rectangle, Renderer, SVG, SVGOverlay, TileLayer, Tooltip, Transformation, Util, VideoOverlay, bind, toBounds as bounds, canvas, circle, circleMarker, control, divIcon, extend, featureGroup, geoJSON, geoJson, gridLayer, icon, imageOverlay, toLatLng as latLng, toLatLngBounds as latLngBounds, layerGroup, createMap as map, marker, toPoint as point, polygon, polyline, popup, rectangle, setOptions, stamp, svg, svgOverlay, tileLayer, tooltip, toTransformation as transformation, version, videoOverlay };
-//# sourceMappingURL=leaflet-src.esm.js.map
+//# sourceMappingURL=leaflet-index-src.esm.js.map

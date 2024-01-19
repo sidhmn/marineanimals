@@ -11,7 +11,7 @@ header {
 
 @font-face {
     font-family: logoFont;
-    src: url("src/fonts/SwimmingPoolDemo.ttf");
+    src: url("SwimmingPoolDemo.ttf");
 }
 
 header h1 {
@@ -39,7 +39,7 @@ h3 {
 
 @font-face {
     font-family: listFont;
-    src: url("src/fonts/ProximaNovaLight.otf");
+    src: url("ProximaNovaLight.otf");
 }
 
 ul li a {
@@ -87,7 +87,7 @@ ul li {
 }
 
 body {
-    background: url("src/bg.png");
+    background: url("bg.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ footer, footer a, footer a:visited {
 
 @font-face {
     font-family: buttonFont;
-    src: url("src/fonts/ProximaNovaMedium.otf");
+    src: url("index-srcvaMedium.otf");
 }
 
 footer {

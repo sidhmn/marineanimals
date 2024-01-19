@@ -17,8 +17,8 @@
    * Various utility functions, used by Leaflet internally.
    */
 
-  // @function extend(dest: Object, src?: Object): Object
-  // Merges the properties of the `src` object (or multiple objects) into `dest` object and returns the latter. Has an `L.extend` shortcut.
+  // @function extend(dest: Object, index-src?: Object): Object
+  // Merges the properties of the `index-src` object (or multiple objects) into `dest` object and returns the latter. Has an `L.extend` shortcut.
   function extend(dest) {
   	var i, j, len, src;
 
@@ -207,7 +207,7 @@
   // @property emptyImageUrl: String
   // Data URI string containing a base64-encoded empty GIF image.
   // Used as a hack to free memory from unused images on WebKit-powered
-  // mobile devices (by setting image `src` to this string).
+  // mobile devices (by setting image `index-src` to this string).
   var emptyImageUrl = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 
   // inspired by https://paulirish.com/2011/requestanimationframe-for-smart-animating/
@@ -5067,7 +5067,7 @@
    * The layer names can contain HTML, which allows you to add additional styling to the items:
    *
    * ```js
-   * {"<img src='my-layer-icon' /> <span class='my-layer-item'>My Layer</span>": myLayer}
+   * {"<img index-src='my-layer-icon' /> <span class='my-layer-item'>My Layer</span>": myLayer}
    * ```
    */
 
@@ -14509,4 +14509,4 @@
   window.L = exports;
 
 }));
-//# sourceMappingURL=leaflet-src.js.map
+//# sourceMappingURL=leaflet-index-src.js.map

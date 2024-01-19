@@ -8,7 +8,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 let harpSeal = L.icon({
-    iconUrl: './src/baby-harp-seal.jpg',
+    iconUrl: './index-src/baby-harp-seal.jpg',
 
     iconSize:     [30,30], // size of the icon
     iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
@@ -81,7 +81,7 @@ nSealMark8,nSealMark9,nSealMark10,nSealMark11,nSealMark12,nSealMark13,nSealMark1
     nSealMark17,nSealMark18,nSealMark19,nSealMark20,nSealMark21,nSealMark22,nSealMark23,nSealMark24,
     nSealMark25,nSealMark26,nSealMark27,nSealMark28]);
 let leopardSeal = L.icon({
-    iconUrl: './src/leopard-seal.jpg',
+    iconUrl: './index-src/leopard-seal.jpg',
 
     iconSize:     [30,30], // size of the icon
     iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
@@ -126,7 +126,7 @@ sSealMark17 =L.marker([44,-171],{icon: leopardSeal,alt:"southern seal, North Pac
 sSeals = L.layerGroup([sSealMark1,sSealMark2,sSealMark3,sSealMark4,sSealMark5,sSealMark6,sSealMark7,sSealMark8,
     sSealMark9,sSealMark10,sSealMark11,sSealMark12,sSealMark13,sSealMark14,sSealMark15,sSealMark16,sSealMark17]);
 SAFurSeal = L.icon({
-    iconUrl: './src/south-american-fur-seal.jpg',
+    iconUrl: './index-src/south-american-fur-seal.jpg',
 
     iconSize:     [30,30], // size of the icon
     iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
@@ -174,7 +174,7 @@ furSeals = L.layerGroup([furSealMark1,furSealMark2,furSealMark3,furSealMark4,fur
     furSealMark7,furSealMark8,furSealMark9,furSealMark10,furSealMark11,furSealMark12,furSealMark13,furSealMark14,
     furSealMark15,furSealMark16,furSealMark17,furSealMark18,furSealMark19])
 CASeaLion = L.icon({
-    iconUrl: './src/california-sea-lion.jpg',
+    iconUrl: './index-src/california-sea-lion.jpg',
 
     iconSize:     [30,30], // size of the icon
     iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
@@ -207,7 +207,7 @@ seaLionMark12 = L.marker([58,-180],{icon: CASeaLion,alt:"sea lion, Bering Sea"})
 seaLions = L.layerGroup([seaLionMark1,seaLionMark2,seaLionMark3,seaLionMark4,seaLionMark5,seaLionMark6,
     seaLionMark7,seaLionMark8,seaLionMark9,seaLionMark10,seaLionMark11,seaLionMark12])
 walrusI = L.icon({
-    iconUrl: './src/walrus.jpg',
+    iconUrl: './index-src/walrus.jpg',
 
     iconSize:     [30,30], // size of the icon
     iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
